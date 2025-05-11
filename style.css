@@ -2,7 +2,7 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: 'Calibri';
+   font-family:'Gill Sans MT';
    text-decoration: none;
    scroll-behavior: smooth; 
    list-style: none;
@@ -24,7 +24,13 @@ header{
    border-radius: 3rem;
    z-index: 1000;
 }
-
+body{
+   background-image: url(SPACESHIP4K.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   background-size: cover;
+}
 .logo{
    color: white;
    font-size: 1.3rem;
@@ -76,6 +82,10 @@ li a:hover::before{
    background: linear-gradient(to right, rgba(255, 51, 0, 0.877), rgb(43, 35, 153));
 }
 
+.visit-btn a{
+   color: white;
+}
+
 .visit-btn:hover{
    background: linear-gradient(to right rgb(43, 35, 153), rgba(255, 51, 0, 0.877));
    transform:scale(1.03);
@@ -107,6 +117,10 @@ section{
    align-items: center;
    justify-content: center;
    gap: 10rem;
+   background-color: rgba(0,0,0,0.8);
+   color: white;
+   border-radius: 4rem;
+   padding: 2rem;
 }
 
 .about img{
@@ -150,7 +164,7 @@ section{
 .btn{
    border-radius: 1rem;
    padding: 0.5rem 1.5rem;
-   border: 2px solid black;
+   border: 2px solid rgb(255, 255, 255);
    cursor: pointer;
    font-weight: 500;
    text-wrap: nowrap;
@@ -158,8 +172,24 @@ section{
 }
 
 .btn:hover{
-   background-color: black;
-   color:white;
+   background-color: rgb(255, 255, 255);
+   color:rgb(0, 0, 0);
+}
+
+.btn2{
+   border-radius: 1rem;
+   padding: 1rem 2rem;
+   background-color: rgba(0,0,0,0.8);
+   color: white;
+   cursor: pointer;
+   font-weight: 500;
+   text-wrap: nowrap;
+   transition: 0.2s ease-in-out;
+}
+
+.btn2:hover:hover{
+   background-color: rgb(255, 255, 255);
+   color:rgb(0, 0, 0);
 }
 
 .socials{
@@ -183,6 +213,7 @@ section{
    font-size: 4rem;
    font-weight: 600;
    margin-bottom: 3rem;
+   color: white;
 }
 
 .experience-info{
@@ -205,7 +236,9 @@ section{
 }
 
 .grid-card{
-   border: 2px solid black;
+   color: white;
+   border: 2px  rgba(0,0,0,0.8);
+   background-color: rgba(0,0,0,0.5);
    border-radius: 3rem;
    padding: 3rem;
    display: flex;
@@ -218,8 +251,8 @@ section{
 
 .grid-card:hover{
    transform: scale(1.02);
-   background-color: black;
-   color: white;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
 }
 
 .grid-card span{
@@ -259,16 +292,23 @@ section{
    justify-content: center;
    text-align: center;
    gap: 1.5rem;
-   border: 2px solid black;
+   background-color: rgba(0,0,0,0.5);
+
+   color: white;
    border-radius: 3rem;
    cursor: pointer;
    transition: 0.3s ease-in-out;
 }
 
 .project-card:hover{
-   background-color: black;
-   color: white;
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
    transform: translateY(-10px)scale(1.02);
+}
+
+.project-card h3:hover{
+   transform: scale(1.02);
+   transition: 0.2s ease-in-out;
 }
 
 .project-card img{
@@ -279,11 +319,11 @@ section{
 
 .project-card:hover .btn{
    border: 2px solid white;
-   color: white;
+   color: rgb(0, 0, 0);
 }
 
 .project-card:hover .btn:hover{
-   border: 2px solid white;
+   border: 2px solid rgb(0, 0, 0);
    background-color: white;
    color: black;
 }
@@ -306,7 +346,7 @@ section{
 
 .input-box input{
    border-radius: 3rem;
-   border: 2px solid black;
+   border: 2px solid rgba(255, 255, 255,0.4);
    padding: 2rem 8rem;
    font-size: 3rem;
 }
@@ -346,7 +386,7 @@ footer ul{
 }
 
 footer ul li a{
-   color: black;
+   color: rgb(255, 255, 255);
    font-weight: 600;
 }
 
