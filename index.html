@@ -6,6 +6,14 @@
     <title>Portfolio Webstie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({publicKey: "jG7hkj1Zl516t30g0"});
+    })();
+</script>   
 </head>
 <body>
 
@@ -32,7 +40,7 @@
 
         <i class="fa-solid fa-bars" id="menu-icon"></i>
 
-        <button class="visit-btn"><a href= "https://github.com/Daevanion"> Github</a></button>
+        <button class="visit-btn"><a href= "https://github.com/Daevanion" target="_blank" rel="noopener noreferrer">Github</a></button>
     </header>
 
     <section id="about" class="about">
@@ -54,8 +62,8 @@
                 </div>
 
                 <div class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+                    <a href="https://github.com/Daevanion" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sean-etkin-752769217" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                 </div>
 
             </div>
@@ -124,8 +132,7 @@
                 <h3>RAS Product Catalog</h3>
                 <p>Catalog showcasing an entire company's products. Including technical specs, materials, etc.</p>
                 <div class="btn-group">
-                    <div class="btn">Live Demo</div>
-                    <div class="btn">Github Repo</div>
+                    <div class="btn"><a href="https://drive.google.com/file/d/1Jj-r6sYA_G5JNH2gXEIzGoVgmUAb_-nJ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download PDF</a></div>
                 </div>
             </div>
 
@@ -146,13 +153,16 @@
         <div class="input-box">
 
             <h2 class="section-title">Contact Me</h2>
-
-            <div class="input">
-                <input type="text" placeholder="example@email.com">
+            <form>
+            <div class="input" id="email_input">
+                <input type="email" id="email" placeholder="example@email.com" required>
                 <i class="fa-solid fa-envelope"></i>
             </div>
-            <div class="btn2">Submit</div>
+            <br>
+            <button type="submit" class="btn2" onclick="sendMail()">Submit</button>
+            </form>
         </div>
+        
     </section>
 
     <footer>
