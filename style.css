@@ -9,7 +9,9 @@
 }
 
 a { 
-   color: inherit;}
+   color: inherit;
+}
+
 header{
    position: fixed;
    top: 1rem;
@@ -26,6 +28,24 @@ header{
    border-radius: 3rem;
    z-index: 1000;
 }
+
+.header_demo{
+   position: fixed;
+   top: 1rem;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 5rem;
+   background-color: rgba(180, 164, 111, 0.6);
+   backdrop-filter: blur(8px);
+   color:rgb(255, 255, 255);
+   padding: 0.5rem 1.5rem;
+   border-radius: 3rem;
+   z-index: 1000;
+}
+
 body{
    background-image: url(SPACESHIP4K.jpg);
    background-repeat: no-repeat;
@@ -314,7 +334,7 @@ section{
 
 .project-card h3:hover{
    transform: scale(1.02);
-   transition: 0.2s ease-in-out;
+   transition: 0.3s ease-in-out;
 }
 
 .project-card img{
